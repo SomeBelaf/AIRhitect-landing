@@ -9,7 +9,6 @@ Landing page for Wordpress with a blog, сreated with **HTML**, **SCSS** and **J
 Libraries used in the project:
 
 - **Slick** - https://kenwheeler.github.io/slick/
-- **Magnific Popup** - https://dimsemenov.com/plugins/magnific-popup/
 
 To installing all packages locally, enter into the console **npm install**.
 

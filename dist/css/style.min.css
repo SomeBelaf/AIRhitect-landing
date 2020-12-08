@@ -443,9 +443,6 @@ img {
 }
 
 @media (min-width: 768px) {
-  .about-us-content {
-    margin-bottom: 0;
-  }
   .about-us-content__cell {
     margin-bottom: 0;
   }
@@ -720,6 +717,7 @@ img {
 /*Styles for page OUR TEAM*/
 .team {
   margin-top: 55%;
+  margin-bottom: 6rem;
 }
 
 .colleague {
@@ -956,9 +954,6 @@ img {
 @media (min-width: 992px) {
   .contact {
     margin-top: 19%;
-  }
-  .contact__content {
-    margin-bottom: 0;
   }
   .contact__map {
     margin-top: -19%;
