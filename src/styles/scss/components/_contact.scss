@@ -1,0 +1,139 @@
+.contact {
+  margin-top: 40%;
+  &__content {
+    margin-bottom: 4rem;
+  }
+  &__intro {
+    margin-bottom: 4rem;
+  }
+  &__info {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    h2 {
+      @include font("Lato", 900, normal);
+      font-size: 3rem;
+      color: $lighter_text_color;
+      letter-spacing: 3px;
+      line-height: 1.07;
+    }
+  }
+  &__icon {
+    fill: $main_color;
+    margin-right: 2rem;
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    svg:last-child {
+      margin-right: 0;
+    }
+    .icon-linkedin,
+    .icon-facebook {
+      @include svg-icon(30, 30);
+    }
+
+    .icon-instagram,
+    .icon-google-plus {
+      @include svg-icon(35, 35);
+    }
+  }
+  &__text {
+    margin-top: -13px;
+    h3 {
+      @include font("Lato", 900, normal);
+      font-size: 1.6rem;
+      color: $lighter_text_color;
+      margin-bottom: 1.5rem;
+    }
+    p,
+    a {
+      @include font("Lato", 300, normal);
+      font-size: 1.6rem;
+      color: $lighter_text_color;
+    }
+    p {
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+    a {
+      letter-spacing: 3px;
+    }
+  }
+  &__email,
+  &__phone,
+  &__address {
+    margin-bottom: 4rem;
+    svg {
+      @include svg-icon(25, 25);
+      float: left;
+    }
+    p,
+    a {
+      @include font("Lato", 300, normal);
+      line-height: 1.4;
+      font-size: 1.6rem;
+      color: $lighter_text_color;
+      letter-spacing: 2px;
+    }
+  }
+  &__form {
+    button {
+      height: 4rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.6rem;
+      background-color: $lighter_text_color;
+    }
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 2rem;
+      outline: none;
+      color: $lighter_text_color;
+      background-color: $darker_second_color;
+      border: none;
+      font-size: 1.6rem;
+      padding: 1.5rem 2rem;
+      &::placeholder {
+        color: $lighter_text_color;
+      }
+      @include font("Lato", 300, normal);
+    }
+    input {
+      height: 4rem;
+    }
+    textarea {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__map {
+    width: 100%;
+    min-height: 80rem;
+  }
+}
+
+
+//  >= 992px
+@media (min-width: 992px) {
+  .contact {
+    margin-top: 19%;
+    &__content {
+      margin-bottom: 0;
+    }
+    &__map {
+      margin-top: -19%;
+      min-height: 100vh;
+    }
+  }
+}
+//  >= 1200px
+@media (min-width: 1200px) {
+  .contact {
+    margin-top: 12.75%;
+    &__map {
+      margin-top: -12.75%;
+    }
+  }
+}

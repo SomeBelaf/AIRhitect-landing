@@ -1,0 +1,56 @@
+.team {
+  margin-top: 55%;
+}
+.colleague {
+  text-align: center;
+  margin-bottom: 5rem;
+  &__photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 16rem;
+    max-height: 16rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 5.4rem;
+  }
+  h2 {
+    @include font("Lato", 900, normal);
+    font-size: 2.4rem;
+    color: $main_text_color;
+    letter-spacing: 1px;
+  }
+  h3 {
+    @include font("Lato", 300, normal);
+    font-size: 2.4rem;
+    color: $main_text_color;
+    margin-bottom: 3rem;
+  }
+  p {
+    @include font("Lato", 300, normal);
+    font-size: 1.8rem;
+    color: $main_text_color;
+    line-height: 1.65;
+  }
+}
+
+//  >= 576px
+@media (min-width: 576px) {
+  .team {
+    margin-top: 35%;
+  }
+}
+// >= 768px
+@media (min-width: 768px) {
+  .colleague {
+    margin-bottom: 0;
+  }
+}
+//  >= 992px
+@media (min-width: 992px) {
+  .team {
+    margin-top: 17%;
+  }
+}
+//  >= 1200px
+@media (min-width: 1200px) {
+}

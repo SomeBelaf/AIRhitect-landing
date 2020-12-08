@@ -1,0 +1,97 @@
+.hero {
+  &__content {
+    position: absolute;
+    top: 29.5%;
+    right: 7.3%;
+    text-align: right;
+    h3 {
+      letter-spacing: 0.06em;
+      font-size: 2.2rem;
+      @include font("MuseoSansCyrl", 300, italic);
+      color: $main_text_color;
+    }
+    h1 {
+      margin: 0.25em 0;
+      line-height: 1.22;
+      letter-spacing: 0.052em;
+      text-transform: uppercase;
+      color: $main_text_color;
+      font-size: 3rem;
+      @include font("MuseoSansCyrl", 900, normal);
+    }
+  }
+}
+.hero-slider {
+  position: relative;
+  &__item {
+    outline: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 101vh;
+  }
+  &__dots {
+    position: absolute;
+    left: 50%;
+    bottom: 4.5rem;
+    transform: translateX(-50%);
+    list-style: none;
+    float: left;
+    .slick-active {
+      background-color: $main_color;
+    }
+    li {
+      button {
+        display: none;
+      }
+      cursor: pointer;
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1.5rem;
+      border: 2px solid $main_color;
+      border-radius: 50%;
+      background-color: transparent;
+      transition: $main_transition;
+    }
+  }
+}
+
+//  >= 576px
+@media (min-width: 576px) {
+  .hero {
+    &__content {
+      top: 20%;
+      h3 {
+        font-size: 3.2rem;
+      }
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+// >= 768px
+@media (min-width: 768px) {
+  .hero {
+    &__content {
+      top: 29.5%;
+      h3 {
+        font-size: 3.6rem;
+      }
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
+//  >= 992px
+@media (min-width: 992px) {
+  .hero {
+    &__content {
+      h1 {
+        font-size: 7.2rem;
+      }
+    }
+  }
+}

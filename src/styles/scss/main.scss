@@ -1,0 +1,64 @@
+/*
+//  >= 576px
+@media (min-width: 576px) {
+}
+// >= 768px
+@media (min-width: 768px) {
+}
+//  >= 992px
+@media (min-width: 992px) {
+}
+//  >= 1200px
+@media (min-width: 1200px) {
+}
+*/
+
+@import "mixins";
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 50%;
+}
+body {
+  @include font("Lato", 400, normal);
+  background: $bg_color;
+}
+p {
+  color: $main_text_color;
+  transition: $main_transition;
+}
+a {
+  &:hover,
+  :focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+//  >= 576px
+@media (min-width: 576px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@import "fonts";
+@import "global-classes";
+@import "sprite";
+
+//------------------------- Импорт общих компонентов
+@import "components/header";
+//------------------------- Импорт страниц
+@import "pages/home-page";
+@import "pages/about-us-page";
+@import "pages/projects-page";
+@import "pages/our-team-page";
+@import "pages/contact-page";

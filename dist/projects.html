@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIRhitect</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="projects-page">
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row justify-content-sm-between align-items-center">
+          <div class="col-4 col-sm-auto">
+            <button class="button menu-btn">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <nav class="header__menu">
+            <ul>
+              <a href="index.html"><li>home</li></a>
+              <a href="about-us.html"><li>about us</li></a>
+              <a href="projects.html"><li>works</li></a>
+              <a href="our-team.html"><li>our team</li></a>
+              <a href="contact.html"><li>find us</li></a>
+            </ul>
+          </nav>
+          <div class="col-4 col-sm-auto logo">
+            <a href="index.html">
+              <img src="./assets/images/logo.png" alt="AIRhitect" />
+            </a>
+          </div>
+          <div class="col-auto to-contact-btn__wrapper">
+            <a href="contact.html" class="button to-contact-btn">
+              <i class="fas fa-map-marker-alt"></i>
+              contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <article class="page-title"><h2>projects</h2></article>
+    <article class="projects-content">
+      <ul class="projects-slider">
+        <li
+          id="project-1"
+          class="projects-slider__item"
+          style="background-image: url('./assets/images/project-1.jpg')"
+        >
+          <div class="projects-slider__description">
+            <h3>Project name</h3>
+            <p>Vivamus imperdiet hendrerit leo quis fringilla.</p>
+          </div>
+        </li>
+        <li
+          id="project-2"
+          class="projects-slider__item"
+          style="background-image: url('./assets/images/project-2.jpg')"
+        >
+          <div class="projects-slider__description">
+            <h3>Project name</h3>
+            <p>Vivamus imperdiet hendrerit leo quis fringilla.</p>
+          </div>
+        </li>
+        <li
+          id="project-3"
+          class="projects-slider__item"
+          style="background-image: url('./assets/images/project-3.jpg')"
+        >
+          <div class="projects-slider__description">
+            <h3>Project name</h3>
+            <p>Vivamus imperdiet hendrerit leo quis fringilla.</p>
+          </div>
+        </li>
+        <li
+          id="project-4"
+          class="projects-slider__item"
+          style="background-image: url('./assets/images/project-2.jpg')"
+        >
+          <div class="projects-slider__description">
+            <h3>Project name</h3>
+            <p>Vivamus imperdiet hendrerit leo quis fringilla.</p>
+          </div>
+        </li>
+        <li
+          id="project-5"
+          class="projects-slider__item"
+          style="background-image: url('./assets/images/project-3.jpg')"
+        >
+          <div class="projects-slider__description">
+            <h3>Project name</h3>
+            <p>Vivamus imperdiet hendrerit leo quis fringilla.</p>
+          </div>
+        </li>
+        <li
+          id="project-6"
+          class="projects-slider__item"
+          style="background-image: url('./assets/images/project-1.jpg')"
+        >
+          <div class="projects-slider__description">
+            <h3>Project name</h3>
+            <p>Vivamus imperdiet hendrerit leo quis fringilla.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="slider-button projects-slider__btn--prev">
+        <svg>
+          <use xlink:href="./assets/images/sprite.svg#prev-arrow"></use>
+        </svg>
+      </button>
+      <button class="slider-button projects-slider__btn--next">
+        <svg>
+          <use xlink:href="./assets/images/sprite.svg#next-arrow"></use>
+        </svg>
+      </button>
+    </article>
+
+    <div class="modal__wrapper" id="modal-project-1">
+      <article class="modal">
+        <ul class="modal-slider">
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-1.jpg')"
+          ></li>
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-2.jpg')"
+          ></li>
+        </ul>
+        <section class="modal__description">
+          <h3>Project name</h3>
+          <p>
+            Vivamus imperdiet hendrerit leo quis fringilla. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Vivamus eleifend leo sit amet
+            rutrum pulvinar.<br />
+            <br />
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Morbi aliquam mauris sed ante laoreet, a
+            luctus nunc finibus. Quisque quis neque enim. In facilisis posuere
+            elementum. Morbi eu odio bibendum, pretium velit in, feugiat mi.
+            Cras gravida neque in enim tempus pretium. Maecenas sodales
+            vestibulum eros at consectetur.<br />
+            <br />
+            Donec nisi tortor, malesuada sed pretium nec, faucibus ut velit. Sed
+            congue tempor orci, id suscipit tortor semper.
+          </p>
+        </section>
+        <button class="slider-button modal-slider__btn--prev">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#prev-arrow"></use>
+          </svg>
+        </button>
+        <button class="slider-button modal-slider__btn--next">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#next-arrow"></use>
+          </svg>
+        </button>
+        <button class="close-modal">
+          <svg class="icon-close">
+            <use xlink:href="./assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </article>
+    </div>
+    <div class="modal__wrapper" id="modal-project-2">
+      <article class="modal">
+        <ul class="modal-slider">
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-2.jpg')"
+          ></li>
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-3.jpg')"
+          ></li>
+        </ul>
+        <section class="modal__description">
+          <h3>Project name</h3>
+          <p>
+            Vivamus imperdiet hendrerit leo quis fringilla. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Vivamus eleifend leo sit amet
+            rutrum pulvinar.<br />
+            <br />
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Morbi aliquam mauris sed ante laoreet, a
+            luctus nunc finibus. Quisque quis neque enim. In facilisis posuere
+            elementum. Morbi eu odio bibendum, pretium velit in, feugiat mi.
+            Cras gravida neque in enim tempus pretium. Maecenas sodales
+            vestibulum eros at consectetur.<br />
+            <br />
+            Donec nisi tortor, malesuada sed pretium nec, faucibus ut velit. Sed
+            congue tempor orci, id suscipit tortor semper.
+          </p>
+        </section>
+        <button class="slider-button modal-slider__btn--prev">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#prev-arrow"></use>
+          </svg>
+        </button>
+        <button class="slider-button modal-slider__btn--next">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#next-arrow"></use>
+          </svg>
+        </button>
+        <button class="close-modal">
+          <svg class="icon-close">
+            <use xlink:href="./assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </article>
+    </div>
+    <div class="modal__wrapper" id="modal-project-3">
+      <article class="modal">
+        <ul class="modal-slider">
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-3.jpg')"
+          ></li>
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-1.jpg')"
+          ></li>
+        </ul>
+        <section class="modal__description">
+          <h3>Project name</h3>
+          <p>
+            Vivamus imperdiet hendrerit leo quis fringilla. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Vivamus eleifend leo sit amet
+            rutrum pulvinar.<br />
+            <br />
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Morbi aliquam mauris sed ante laoreet, a
+            luctus nunc finibus. Quisque quis neque enim. In facilisis posuere
+            elementum. Morbi eu odio bibendum, pretium velit in, feugiat mi.
+            Cras gravida neque in enim tempus pretium. Maecenas sodales
+            vestibulum eros at consectetur.<br />
+            <br />
+            Donec nisi tortor, malesuada sed pretium nec, faucibus ut velit. Sed
+            congue tempor orci, id suscipit tortor semper.
+          </p>
+        </section>
+        <button class="slider-button modal-slider__btn--prev">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#prev-arrow"></use>
+          </svg>
+        </button>
+        <button class="slider-button modal-slider__btn--next">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#next-arrow"></use>
+          </svg>
+        </button>
+        <button class="close-modal">
+          <svg class="icon-close">
+            <use xlink:href="./assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </article>
+    </div>
+    <div class="modal__wrapper" id="modal-project-4">
+      <article class="modal">
+        <ul class="modal-slider">
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-2.jpg')"
+          ></li>
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-3.jpg')"
+          ></li>
+        </ul>
+        <section class="modal__description">
+          <h3>Project name</h3>
+          <p>
+            Vivamus imperdiet hendrerit leo quis fringilla. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Vivamus eleifend leo sit amet
+            rutrum pulvinar.<br />
+            <br />
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Morbi aliquam mauris sed ante laoreet, a
+            luctus nunc finibus. Quisque quis neque enim. In facilisis posuere
+            elementum. Morbi eu odio bibendum, pretium velit in, feugiat mi.
+            Cras gravida neque in enim tempus pretium. Maecenas sodales
+            vestibulum eros at consectetur.<br />
+            <br />
+            Donec nisi tortor, malesuada sed pretium nec, faucibus ut velit. Sed
+            congue tempor orci, id suscipit tortor semper.
+          </p>
+        </section>
+        <button class="slider-button modal-slider__btn--prev">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#prev-arrow"></use>
+          </svg>
+        </button>
+        <button class="slider-button modal-slider__btn--next">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#next-arrow"></use>
+          </svg>
+        </button>
+        <button class="close-modal">
+          <svg class="icon-close">
+            <use xlink:href="./assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </article>
+    </div>
+    <div class="modal__wrapper" id="modal-project-5">
+      <article class="modal">
+        <ul class="modal-slider">
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-3.jpg')"
+          ></li>
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-1.jpg')"
+          ></li>
+        </ul>
+        <section class="modal__description">
+          <h3>Project name</h3>
+          <p>
+            Vivamus imperdiet hendrerit leo quis fringilla. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Vivamus eleifend leo sit amet
+            rutrum pulvinar.<br />
+            <br />
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Morbi aliquam mauris sed ante laoreet, a
+            luctus nunc finibus. Quisque quis neque enim. In facilisis posuere
+            elementum. Morbi eu odio bibendum, pretium velit in, feugiat mi.
+            Cras gravida neque in enim tempus pretium. Maecenas sodales
+            vestibulum eros at consectetur.<br />
+            <br />
+            Donec nisi tortor, malesuada sed pretium nec, faucibus ut velit. Sed
+            congue tempor orci, id suscipit tortor semper.
+          </p>
+        </section>
+        <button class="slider-button modal-slider__btn--prev">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#prev-arrow"></use>
+          </svg>
+        </button>
+        <button class="slider-button modal-slider__btn--next">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#next-arrow"></use>
+          </svg>
+        </button>
+        <button class="close-modal">
+          <svg class="icon-close">
+            <use xlink:href="./assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </article>
+    </div>
+    <div class="modal__wrapper" id="modal-project-6">
+      <article class="modal">
+        <ul class="modal-slider">
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-1.jpg')"
+          ></li>
+          <li
+            class="modal-slider__item"
+            style="background-image: url('./assets/images/project-3.jpg')"
+          ></li>
+        </ul>
+        <section class="modal__description">
+          <h3>Project name</h3>
+          <p>
+            Vivamus imperdiet hendrerit leo quis fringilla. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Vivamus eleifend leo sit amet
+            rutrum pulvinar.<br />
+            <br />
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Morbi aliquam mauris sed ante laoreet, a
+            luctus nunc finibus. Quisque quis neque enim. In facilisis posuere
+            elementum. Morbi eu odio bibendum, pretium velit in, feugiat mi.
+            Cras gravida neque in enim tempus pretium. Maecenas sodales
+            vestibulum eros at consectetur.<br />
+            <br />
+            Donec nisi tortor, malesuada sed pretium nec, faucibus ut velit. Sed
+            congue tempor orci, id suscipit tortor semper.
+          </p>
+        </section>
+        <button class="slider-button modal-slider__btn--prev">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#prev-arrow"></use>
+          </svg>
+        </button>
+        <button class="slider-button modal-slider__btn--next">
+          <svg>
+            <use xlink:href="./assets/images/sprite.svg#next-arrow"></use>
+          </svg>
+        </button>
+        <button class="close-modal">
+          <svg class="icon-close">
+            <use xlink:href="./assets/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </article>
+    </div>
+
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

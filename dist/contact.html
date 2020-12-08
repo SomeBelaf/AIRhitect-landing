@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIRhitect</title>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class='contact-page'>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row justify-content-sm-between align-items-center">
+          <div class="col-4 col-sm-auto">
+            <button class="button menu-btn">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <nav class="header__menu">
+            <ul>
+              <a href="index.html"><li>home</li></a>
+              <a href="about-us.html"><li>about us</li></a>
+              <a href="projects.html"><li>works</li></a>
+              <a href="our-team.html"><li>our team</li></a>
+              <a href="contact.html"><li>find us</li></a>
+            </ul>
+          </nav>
+          <div class="col-4 col-sm-auto logo">
+            <a href="index.html">
+              <img src="./assets/images/logo.png" alt="AIRhitect" />
+            </a>
+          </div>
+          <div class="col-auto to-contact-btn__wrapper">
+            <a href="contact.html" class="button to-contact-btn">
+              <i class="fas fa-map-marker-alt"></i>
+              contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <article class="page-title"><h2>contact</h2></article>
+
+    <article class="contact">
+      <div class="container-fluid">
+        <div class="row flex-column flex-lg-row">
+          <section
+            class="col-12 col-lg-7 col-xl-5 offset-xl-1 contact__content"
+          >
+            <div class="row contact__intro">
+              <div class="col-6 col-lg-5 contact__title">
+                <h2>Contact us via email, phone or come by into our office!</h2>
+              </div>
+              <div
+                class="col-5 offset-1 offset-lg-2 align-self-end contact__social"
+              >
+                <svg class="contact__icon icon-linkedin">
+                  <use xlink:href="./assets/images/sprite.svg#linkedin"></use>
+                </svg>
+                <svg class="contact__icon icon-facebook">
+                  <use xlink:href="./assets/images/sprite.svg#facebook"></use>
+                </svg>
+                <svg class="contact__icon icon-instagram">
+                  <use xlink:href="./assets/images/sprite.svg#instagram"></use>
+                </svg>
+                <svg class="contact__icon icon-google-plus">
+                  <use
+                    xlink:href="./assets/images/sprite.svg#google-plus"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="row contact__info">
+              <div class="col-6">
+                <div class="contact__email">
+                  <svg class="contact__icon icon-email">
+                    <use xlink:href="./assets/images/sprite.svg#email"></use>
+                  </svg>
+                  <a href="#">info@airhitect.com</a>
+                </div>
+                <div class="contact__phone">
+                  <svg class="contact__icon icon-phone">
+                    <use xlink:href="./assets/images/sprite.svg#phone"></use>
+                  </svg>
+                  <p>+12 34 567 890</p>
+                  <p>+09 87 654 321</p>
+                </div>
+                <div class="contact__address">
+                  <svg class="contact__icon icon-home">
+                    <use xlink:href="./assets/images/sprite.svg#home"></use>
+                  </svg>
+                  <p>1012 Budapest</p>
+                  <p>Márvány utca 16</p>
+                </div>
+              </div>
+              <div class="col-4 offset-1 contact__text">
+                <h3>We are hiring!</h3>
+                <p>
+                  We are looking for new talents to our team! If you think you
+                  are the right person for AIRhitect send us an email with your
+                  CV and portfolio. Don’t forget to write a little about
+                  yourself!
+                </p>
+                <a href="#">ob@airhitect.com</a>
+              </div>
+            </div>
+            <div class="row flex-column contact__form">
+              <div class="col-8 col-md-5">
+                <input type="text" placeholder="Name" />
+              </div>
+              <div class="col-8 col-md-5">
+                <input type="text" placeholder="E-mail" />
+              </div>
+              <div class="col-8 col-md-5">
+                <input type="text" placeholder="Subject" />
+              </div>
+              <div class="col-12">
+                <textarea
+                  name=""
+                  id=""
+                  cols="35"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="col-auto align-self-end">
+                <button class="button button--submit" type="submit">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </section>
+          <section
+            class="col-12 col-lg-5 offset-xl-1 contact__map"
+            id="contact__map"
+          ></section>
+        </div>
+      </div>
+    </article>
+
+    
+
+    <script src="./js/libs.min.js"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK4YsEEvvEmsyMJJ_Fs6MdJl9KPbzcI-A&callback=initMap"
+    ></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+  </body>
+</html>

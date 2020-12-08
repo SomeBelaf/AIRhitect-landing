@@ -1,0 +1,61 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 3rem 1.5rem;
+  min-width: 100%;
+  &__menu {
+    display: none;
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+    width: 18rem;
+    z-index: 10;
+    background-color: $main_color;
+    ul {
+      list-style: none;
+      li {
+        display: block;
+        padding: 2rem 3rem;
+        background-color: $main_color;
+        transition: $main_transition;
+        &:hover {
+          background-color: $hover_menu_bg;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 1.8rem;
+        @include font("Lato", 300, normal);
+        color: $main_text_color;
+      }
+    }
+  }
+  .to-contact-btn {
+    display: block;
+    text-decoration: none;
+    &__wrapper {
+      display: none;
+    }
+  }
+}
+
+//  >= 576px
+@media (min-width: 576px) {
+  .header {
+    &__menu {
+      width: 29rem;
+    }
+    .menu-btn {
+      i {
+        margin-right: 5px;
+      }
+    }
+    .to-contact-btn {
+      &__wrapper {
+        display: block;
+      }
+    }
+  }
+}

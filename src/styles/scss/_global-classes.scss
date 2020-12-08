@@ -1,0 +1,84 @@
+.home-page {
+  overflow: hidden;
+}
+.projects-page {
+  overflow: hidden;
+}
+.our-team-page {
+  background-color: $main-color;
+}
+.contact-page {
+  background-color: $second_color;
+}
+.page-title {
+  position: absolute;
+  left: 3rem;
+  top: 10rem;
+  z-index: 3;
+  display: block;
+  background-color: $main_color;
+  padding: 1rem 1.55rem;
+  h2 {
+    @include font("Lato", 900, normal);
+    letter-spacing: 2px;
+    font-size: 2.6rem;
+    color: $main_text_color;
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: $main_color;
+  box-shadow: none;
+  font-size: 2.4rem;
+  line-height: 0;
+  padding: 0.3em 0.62em;
+  @include font("Lato", 300, normal);
+  color: $main_text_color;
+  transition: $main_transition;
+  outline: none;
+  i {
+    vertical-align: middle;
+  }
+  &--submit {
+    padding: 0 2rem;
+  }
+  &:hover {
+    background-color: $second_color;
+    color: $lighter_text_color;
+  }
+}
+
+.slider-button {
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  z-index: 4;
+  border: none;
+  box-shadow: none;
+  background-color: $main_color;
+  &:hover {
+    svg {
+      transform: scale(1.05);
+    }
+  }
+  svg {
+    transition: $main_transition;
+    fill: $second_color;
+    @include svg-icon(40, 60);
+  }
+}
+// >= 768px
+@media (min-width: 768px) {
+  .page-title {
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+  .slider-button {
+    svg {
+      @include svg-icon(60, 80);
+    }
+  }
+}

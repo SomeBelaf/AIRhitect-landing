@@ -1,0 +1,213 @@
+.projects-slider {
+  position: relative;
+  list-style: none;
+  &__item {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    outline: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 100vh;
+    &:hover {
+      .projects-slider__description {
+        bottom: 0;
+      }
+    }
+  }
+  &__description {
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: $main_color;
+    padding: 3rem;
+    transition: $main_transition;
+    h3 {
+      @include font("Lato", 900, normal);
+      font-size: 3.6rem;
+      letter-spacing: 2px;
+      color: $main_text_color;
+    }
+    p {
+      @include font("Lato", 300, normal);
+      font-size: 3.6rem;
+      color: $main_text_color;
+    }
+  }
+  &__btn--prev {
+    top: 55.8%;
+    left: 3rem;
+  }
+  &__btn--next {
+    top: 55.8%;
+    right: 3rem;
+  }
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 79%;
+  max-width: 168rem;
+  height: 79%;
+  max-height: 84rem;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  overflow: hidden;
+  &__wrapper {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  &__description {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50%;
+    overflow: auto;
+    background-color: $main_color;
+    padding: 3rem;
+    transition: $main_transition;
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: #f5f5f5;
+    }
+    &::-webkit-scrollbar {
+      width: 7px;
+      background-color: #f5f5f5;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #8e8e8e;
+    }
+    h3 {
+      @include font("Lato", 900, normal);
+      font-size: 3.6rem;
+      letter-spacing: 2px;
+      color: $main_text_color;
+      margin-bottom: 2.7rem;
+    }
+    p {
+      @include font("Lato", 300, normal);
+      font-size: 2rem;
+      color: $main_text_color;
+    }
+  }
+  .close-modal {
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    z-index: 10;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    &:hover {
+      svg {
+        transform: scale(1.2);
+      }
+    }
+    svg {
+      transition: $main_transition;
+      @include svg-icon(28, 28);
+      fill: $second_color;
+    }
+  }
+}
+
+.modal-slider {
+  list-style: none;
+  &__item {
+    display: block;
+    position: relative;
+    outline: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 44rem;
+    &:hover {
+      .projects-slider__description {
+        bottom: 0;
+      }
+    }
+  }
+  &__btn--prev {
+    top: 25%;
+    left: 2rem;
+  }
+  &__btn--next {
+    top: 25%;
+    right: 2rem;
+  }
+}
+
+// >= 992px
+@media (min-width: 992px) {
+  .modal {
+    &__description {
+      top: 0;
+      left: initial;
+      width: 40%;
+      height: initial;
+      padding: 4rem;
+    }
+  }
+  .modal-slider {
+    &__item {
+      height: 84rem;
+    }
+    &__btn--prev {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2%;
+    }
+    &__btn--next {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 42%;
+    }
+  }
+}
+//  >= 1200px
+@media (min-width: 1200px) {
+  .modal {
+    &__description {
+      width: 31%;
+      padding: 6rem;
+    }
+  }
+  .modal-slider {
+    &__btn--next {
+      right: 32.5%;
+    }
+  }
+}
+
+@keyframes open-modal {
+  from {
+    left: -9999px;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes close-modal {
+  from {
+    left:50% ;
+  }
+  to {
+    left: -9999px;
+  }
+}
