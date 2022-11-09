@@ -1,6 +1,6 @@
 Landing page for Wordpress with a blog, сreated with **HTML**, **SCSS** and **JQuery**.
 
-**Live demo** - https://someimya.github.io/AIRhitect-landing/dist/index.html
+**Live demo** - https://somebelaf.github.io/AIRhitect-landing/dist/index.html
 
 **Bootstrap 4** - https://getbootstrap.com/
 
